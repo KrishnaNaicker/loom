@@ -1,0 +1,13 @@
+[project]
+name = "loom"
+version = "0.1.0"
+description = "A tiny coding harness: model <-> tools loop, a verification gate, evals."
+requires-python = ">=3.12,<3.13"
+dependencies = ["anthropic"]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
